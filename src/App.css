@@ -3,6 +3,9 @@
     padding: 0;
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
+    color: #013a3c;
+    font-family: "Lato", sans-serif;
 }
 
 .App {
