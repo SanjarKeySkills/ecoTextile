@@ -18,4 +18,4 @@ const DefaultLayout = () => {
     );
 };
 
-export default index;
+export default DefaultLayout;
