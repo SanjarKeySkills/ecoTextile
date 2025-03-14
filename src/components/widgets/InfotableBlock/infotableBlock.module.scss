@@ -1,0 +1,79 @@
+.infoTableBlock {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+.infoList {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 24px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+.infoText {
+    font-size: 24px;
+    color: #013a3c;
+}
+.infoCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    background-color: #ff851b;
+    border-radius: 8px;
+}
+.industryBlock {
+    border-radius: 8px;
+    padding: 24px;
+    width: 50%;
+    max-height: 640px;
+}
+.listWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+    list-style-type: none;
+    h5 {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0;
+        color: #ffffff;
+    }
+    li {
+        font-size: 16px;
+        text-align: justify;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 1024px) {
+    .infoTableBlock {
+        padding: 24px 8px;
+    }
+    .infoText {
+        font-size: 16px;
+    }
+    .industryBlock {
+        width: 88%;
+        border-radius: 8px;
+        background-color: #ff851b;
+    }
+    .headList {
+        height: auto;
+    }
+    .infoList {
+        flex-direction: column;
+        padding: 0 24px 40px;
+    }
+    .infoCard {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
