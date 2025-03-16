@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async";
 import { MissionPage } from "./pages/MissionPage/MissionPage.async";
-// import { OurTeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
-// import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
+import { ContactPage } from "./pages/ContactPage/ContactPage.async";
+
+// import { TeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
 // import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
 // import { VacancyPage } from "./pages/VacancyPage/VacancyPage.async.jsx";
 // import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
@@ -34,6 +35,15 @@ function App() {
                                 </Suspense>
                             }
                         />
+                        <Route
+                            path="/contact"
+                            element={
+                                <Suspense fallback={<ContentFallback />}>
+                                    <ContactPage />
+                                </Suspense>
+                            }
+                        />
+
                         {/* <Route
                             path="/team"
                             element={
@@ -59,24 +69,17 @@ function App() {
                                     <TeamMemberPage />
                                 </Suspense>
                             }
-                        />
-                        <Route
-                            path="/contacts"
-                            element={
-                                <Suspense fallback={<ContentFallback />}>
-                                    <ContactPage />
-                                </Suspense>
-                            }
-                        />
-                        <Route
+                        /> */}
+
+                        {/* <Route
                             path="/gallery"
                             element={
                                 <Suspense fallback={<ContentFallback />}>
                                     <GalleryPage />
                                 </Suspense>
                             }
-                        />
-                        <Route
+                        /> */}
+                        {/* <Route
                             path="/vacancy"
                             element={
                                 <Suspense fallback={<ContentFallback />}>

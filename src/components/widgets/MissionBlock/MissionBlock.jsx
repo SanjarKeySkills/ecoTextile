@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./missionBlock.module.scss";
-import missionImg from "../../../assets/missionImg.png";
 
 const MissionBlock = () => {
     return (
