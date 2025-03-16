@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async";
-// import { MissionPage } from "./pages/MissionPage/MissionPage.async";
+import { MissionPage } from "./pages/MissionPage/MissionPage.async";
 // import { OurTeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
 // import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
 // import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
@@ -26,7 +26,7 @@ function App() {
                                 </Suspense>
                             }
                         />
-                        {/* <Route
+                        <Route
                             path="/mission"
                             element={
                                 <Suspense fallback={<ContentFallback />}>
@@ -34,7 +34,7 @@ function App() {
                                 </Suspense>
                             }
                         />
-                        <Route
+                        {/* <Route
                             path="/team"
                             element={
                                 <Suspense fallback={<ContentFallback />}>
