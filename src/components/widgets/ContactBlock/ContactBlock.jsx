@@ -7,7 +7,7 @@ import Button from "../../ui/Button/Button";
 const ContactBlock = () => {
     return (
         <div className={styles.contact}>
-            <div className={styles.contactWraper}>
+            <div className={styles.contactWrapper}>
                 <div className={styles.contactForm}>
                     <div className={styles.contactFormInfo}>
                         <h2>
@@ -21,17 +21,15 @@ const ContactBlock = () => {
                             <br /> +996 700 840 099
                         </p>
                     </div>
-
                     <div className={styles.contactFormButtonsAndSocial}>
-                        <a href="#" className={styles.sDarkLink}>
-                            Реквизиты
+                        <a href="#" className={styles.btnForm}>
+                            РЕКВИЗИТЫ
                         </a>
 
-                        <a href="/mission" className={styles.sDarkLink}>
-                            О компании
+                        <a href="/mission" className={styles.btnForm}>
+                            О КОМПАНИИ
                         </a>
                     </div>
-
                     <div className={styles.contactSocial}>
                         <a href="https://www.instagram.com/">
                             <img
@@ -49,7 +47,6 @@ const ContactBlock = () => {
                         </a>
                     </div>
                 </div>
-
                 <div className={styles.contactInput}>
                     <form
                         method="post"
