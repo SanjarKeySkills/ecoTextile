@@ -4,6 +4,9 @@ import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async";
 import { MissionPage } from "./pages/MissionPage/MissionPage.async";
 import { ContactPage } from "./pages/ContactPage/ContactPage.async";
+// import { MemberPage } from "./pages/MemberPage/MemberPage.async";
+import { MembersPage } from "./pages/MembersPage/MembersPage.async";
+import { OurteamPage } from "./pages/OurteamPage/OurteamBlock.async";
 
 // import { TeamPage } from "./pages/OurTeamPage/OurTeamPage.async.jsx";
 // import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
@@ -43,12 +46,11 @@ function App() {
                                 </Suspense>
                             }
                         />
-
-                        {/* <Route
+                        <Route
                             path="/team"
                             element={
                                 <Suspense fallback={<ContentFallback />}>
-                                    <OurTeamPage />
+                                    <OurteamPage />
                                 </Suspense>
                             }
                         />
@@ -56,17 +58,17 @@ function App() {
                             path="/members"
                             element={
                                 <Suspense fallback={<div>Loading...</div>}>
-                                    <TeamMembersPage />
+                                    <MembersPage />
                                 </Suspense>
                             }
                         />
-                        <Route
+                        {/* <Route
                             path="/member/:type/:id"
                             // в таком виде to useParams будет приходить строках в виде
                             // ключа с теми значениями
                             element={
                                 <Suspense fallback={<div>Loading...</div>}>
-                                    <TeamMemberPage />
+                                    <MemberPage />
                                 </Suspense>
                             }
                         /> */}
