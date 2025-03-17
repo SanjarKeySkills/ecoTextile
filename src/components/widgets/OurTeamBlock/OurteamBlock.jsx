@@ -1,8 +1,12 @@
 import React from "react";
-import styles from "./ourteamBlock.module.scss";
+import TeammemberCard from "../MembersBlock/TeammemberCard/TeammemberCard";
 
 const OurteamBlock = () => {
-    return <div className={styles.test}>TeamBlock</div>;
+    return (
+        <div>
+            <TeammemberCard />
+        </div>
+    );
 };
 
 export default OurteamBlock;
