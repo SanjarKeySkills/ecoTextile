@@ -4,6 +4,7 @@ import styles from "./header.module.scss";
 import logo from "../../../../assets/ecotextile_logo.png";
 import burgerButton from "../../../../assets/uIelements/burgerBtn.svg";
 import arrowPopUp from "../../../../assets/uIelements/arrowBtn.svg";
+import PopUpProductCard from "../../PopUpProductBlock/popUpProductCard/PopUpProductCard";
 
 const arrLinks = [
     { to: "/", label: "ГЛАВНАЯ" },
@@ -76,12 +77,15 @@ const Header = () => {
 
                 {/* Header bottom */}
                 <div className={styles.headerBottom}>
+                    {/*  */}
+                    {/* dropdownButton */}
+                    {/*  */}
                     <div className={styles.dropdown}>
                         <Link className={styles.dropdownButton}>
                             ЧТО ПЕРЕРАБАТЫВАЕМ
                         </Link>
                         <div className={styles.dropdownContent}>
-                            {arrForRecycle.map((link) => (
+                            {/* {arrForRecycle.map((link) => (
                                 <div key={link.id}>
                                     <Link
                                         key={link.to}
@@ -89,7 +93,8 @@ const Header = () => {
                                         {link.label}
                                     </Link>
                                 </div>
-                            ))}
+                            ))} */}
+                            <PopUpProductCard />
                         </div>
                     </div>
                     <div className={styles.dropdown}>
