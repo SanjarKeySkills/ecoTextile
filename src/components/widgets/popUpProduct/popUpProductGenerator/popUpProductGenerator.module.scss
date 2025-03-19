@@ -1,0 +1,32 @@
+.productList {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    background-color: rgb(78, 228, 40);
+}
+.cardContainer {
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    background-size: cover;
+    background-position: bottom center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: yellow;
+}
+.productLink {
+    padding: 8px;
+    background-color: #c69214;
+    width: 96px;
+    text-align: center;
+    border-radius: 8px;
+    &:hover {
+        background-color: #2950ff;
+        color: #ffffff;
+    }
+}
