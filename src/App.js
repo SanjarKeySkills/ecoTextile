@@ -6,6 +6,7 @@ import { MissionPage } from "./pages/MissionPage/MissionPage.async";
 import { ContactPage } from "./pages/ContactPage/ContactPage.async";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async";
 import { OurteamPage } from "./pages/OurteamPage/OurteamBlock.async";
+import { ItemPage } from "./pages/ItemPage/ItemPage.async";
 // import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
 // import { VacancyPage } from "./pages/VacancyPage/VacancyPage.async.jsx";
 // import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
@@ -58,7 +59,15 @@ function App() {
                                 </Suspense>
                             }
                         />
-
+                        <Route
+                            path="/item/:type/:id"
+                            // в таком виде to useParams будет приходить строках в виде ключа с теми значениями
+                            element={
+                                <Suspense fallback={<div>Loading...</div>}>
+                                    <ItemPage />
+                                </Suspense>
+                            }
+                        />
                         {/* <Route
                             path="/gallery"
                             element={
