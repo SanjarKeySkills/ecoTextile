@@ -8,7 +8,6 @@ const popUpProductCard = () => {
         <div className={styles.productCards}>
             <div className={styles.productCardsWrapper}>
                 <div className={styles.productItemContainer}>
-                    <h2>Test</h2>
                     <PopUpProductGenerator data={PopUpProduct} type="type" />
                 </div>
             </div>

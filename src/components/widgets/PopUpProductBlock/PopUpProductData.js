@@ -5,7 +5,7 @@
 //     { id: 134, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
 // ];
 
-const membersData = [
+const popUpProductData = [
     {
         id: "1",
         name: "ХЛОПОК",
@@ -71,4 +71,4 @@ const membersData = [
     },
 ];
 
-export default membersData;
+export default popUpProductData;
