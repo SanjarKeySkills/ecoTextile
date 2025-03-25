@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./popUpProductCard.module.scss";
 import PopUpProductGenerator from "../popUpProductGenerator/PopUpProductGenerator";
-import PopUpProduct from "../PopUpProductData";
+import PopUpProduct from "../PopUpProductData.js";
 
 const popUpProductCard = () => {
     return (

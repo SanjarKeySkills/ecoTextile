@@ -7,12 +7,12 @@ export default function popUpProductGenerator({ data, type }) {
     return (
         <div className="styles.productList">
             {/* // <div className={clsx(styles.cardList, styles.img, { [styles.active]: true })}> */}
-            {data.map((product) => (
-                <div key={product.id} className={styles.cardContainer}>
+            {data.map((item) => (
+                <div key={item.id} className={styles.cardContainer}>
                     <Link
-                        to={`/product/${type}/${product.id}`}
+                        to={`/item/${type}/${item.id}`}
                         className={styles.productLink}>
-                        {product.name}
+                        {item.name}
                     </Link>
                 </div>
             ))}

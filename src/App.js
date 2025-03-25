@@ -60,7 +60,7 @@ function App() {
                             }
                         />
                         <Route
-                            path="/product/:type/:id"
+                            path="/item/:type/:id"
                             // в таком виде to useParams будет приходить строках в виде ключа с теми значениями
                             element={
                                 <Suspense fallback={<div>Loading...</div>}>
