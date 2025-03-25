@@ -1,5 +1,5 @@
 import React from "react";
-import PopUpItemBlock from "../../components/widgets/PopUpProductBlock/PopUpItemBlock/popUpItemBlock";
+import PopUpItemBlock from "../../components/widgets/PopUpProductBlock/PopUpItemBlock/popUpItemBlock.jsx";
 
 const ItemPage = () => {
     return (
