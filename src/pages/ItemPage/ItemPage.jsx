@@ -1,10 +1,10 @@
 import React from "react";
-import PopUpProductData from "../../components/widgets/PopUpProductBlock/PopUpItemBlock/popUpItemBlock";
+import PopUpItemBlock from "../../components/widgets/PopUpProductBlock/PopUpItemBlock/popUpItemBlock";
 
 const ItemPage = () => {
     return (
         <div>
-            <PopUpProductData />
+            <PopUpItemBlock />
         </div>
     );
 };
