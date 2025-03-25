@@ -11,23 +11,28 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: yellow;
 }
 .itemTitle {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 24px;
     justify-content: center;
     align-items: center;
     img {
-        max-width: 320px;
+        max-width: 240px;
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
     }
 }
 .itemName {
-    color: brown;
+    // color: brown;
 }
 .popUpItemBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 16px;
 }

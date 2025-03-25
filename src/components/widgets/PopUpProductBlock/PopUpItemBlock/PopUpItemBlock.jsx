@@ -18,7 +18,6 @@ const PopUpItemBlock = () => {
                     <h2 className={styles.itemName}>{item.name}</h2>
                 </div>
                 <div className={styles.popUpItemBlock}>
-                    <div>Description</div>
                     <div className={styles.popUpItemDescription}>
                         <p>{item.annotation}</p>
                     </div>
