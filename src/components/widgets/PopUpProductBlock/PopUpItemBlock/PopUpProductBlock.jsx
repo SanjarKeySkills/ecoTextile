@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import styles from "./popUpItemBlock.module.scss";
 import popUpProductData from "../PopUpProductData.js";
 import popUpGoodsData from "../PopUpGoodsData.js";
+import imgEco from "../../../../assets/popUpProduct/eco_1.png";
 
 const PopUpProductBlock = () => {
     const { id, type } = useParams();
@@ -24,10 +25,17 @@ const PopUpProductBlock = () => {
                     <img src={item.image} alt="itemPage" />
                     <h2 className={styles.itemName}>{item.name}</h2>
                 </div>
-                <div className={styles.popUpItemBlock}>
-                    <div className={styles.popUpItemDescription}>
-                        <p>{item.annotation}</p>
-                    </div>
+                <div className={styles.popUpItemInfo}>
+                    {/* <div className={styles.decoration}></div> */}
+                    <img src={imgEco} alt="imgEco" />
+                    <p className={styles.popUpItemDescription}>
+                        {item.annotation}
+                    </p>
+                </div>
+                <div className={styles.btnWrapper}>
+                    <a href="/contact" className={styles.applyBtn}>
+                        <h2>Свяжитесь с нами прямо сейчас!</h2>
+                    </a>
                 </div>
             </div>
         </div>
