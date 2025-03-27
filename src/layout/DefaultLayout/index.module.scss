@@ -2,10 +2,14 @@ body {
     margin: 0;
 }
 .wrapper {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-width: 100vh;
 }
+
 .content {
     flex-grow: 1;
 }
