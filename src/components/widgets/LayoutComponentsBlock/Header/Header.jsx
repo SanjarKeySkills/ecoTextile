@@ -5,6 +5,7 @@ import logo from "../../../../assets/ecotextile_logo.png";
 import burgerButton from "../../../../assets/uIelements/burgerBtn.svg";
 import arrowPopUp from "../../../../assets/uIelements/arrowBtn.svg";
 import PopUpProductCard from "../../PopUpProductBlock/popUpProductCard/PopUpProductCard";
+import PopUpGoodsCard from "../../PopUpProductBlock/PopUpGoodsCard/PopUpGoodsCard";
 
 const arrLinks = [
     { to: "/", label: "ГЛАВНАЯ" },
@@ -77,9 +78,7 @@ const Header = () => {
 
                 {/* Header bottom */}
                 <div className={styles.headerBottom}>
-                    {/*  */}
                     {/* dropdownButton */}
-                    {/*  */}
                     <div className={styles.dropdown}>
                         <Link className={styles.dropdownButton}>
                             ЧТО ПЕРЕРАБАТЫВАЕМ
@@ -102,7 +101,7 @@ const Header = () => {
                             ЧТО ПРОИЗВОДИМ
                         </Link>
                         <div className={styles.dropdownContent}>
-                            {arrForProduct.map((link) => (
+                            {/* {arrForProduct.map((link) => (
                                 <div key={link.id}>
                                     <Link
                                         key={link.to}
@@ -110,7 +109,10 @@ const Header = () => {
                                         {link.label}
                                     </Link>
                                 </div>
-                            ))}
+                            ))} */}
+                            <PopUpGoodsCard />
+
+                            {/* <PopUpProductCard /> */}
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,22 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import styles from "./popUpItemBlock.module.scss";
-import PopUpProductData from "../PopUpProductData";
+import popUpProductData from "../PopUpProductData.js";
+import popUpGoodsData from "../PopUpGoodsData.js";
 
-const PopUpItemBlock = () => {
-    const { id } = useParams();
-    const item = PopUpProductData.find((item) => item.id === id);
-    // возвращает объект в к-р есть информация из УРЛ, id,
+const PopUpProductBlock = () => {
+    const { id, type } = useParams();
+
+    const mapData = {
+        product: popUpProductData,
+        goods: popUpGoodsData,
+    };
+
+    const item = mapData[type].find((e) => e.id === id);
+    // возвращает объект в к-р есть информация из type, id,
     // придет тот id того мембера на кого кликнули
     // получаем того мембера, у кого такой id тот и мембер придет в нашу константу.
-    // вместо type -  встанет массив PopUpProductData
+    // вместо type -  встанет массив mapData[type]
     return (
         <div className={styles.popUpItemBlock}>
             <div key={item.id} className={styles.popUpItemBlockWrapper}>
@@ -27,4 +34,4 @@ const PopUpItemBlock = () => {
     );
 };
 
-export default PopUpItemBlock;
+export default PopUpProductBlock;

@@ -1,18 +1,18 @@
 import React from "react";
-import styles from "./popUpProductCard.module.scss";
+import styles from "./popUpGoodsCard.module.scss";
 import PopUpProductGenerator from "../popUpProductGenerator/PopUpProductGenerator";
-import PopUpProduct from "../PopUpProductData.js";
+import PopUpGoods from "../PopUpGoodsData";
 
-const popUpProductCard = () => {
+const PopUpGoodsCard = () => {
     return (
         <div className={styles.productCards}>
             <div className={styles.productCardsWrapper}>
                 <div className={styles.productItemContainer}>
-                    <PopUpProductGenerator data={PopUpProduct} type="product" />
+                    <PopUpProductGenerator data={PopUpGoods} type="goods" />
                 </div>
             </div>
         </div>
     );
 };
 
-export default popUpProductCard;
+export default PopUpGoodsCard;
