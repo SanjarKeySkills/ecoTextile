@@ -1,10 +1,3 @@
-// const arrForProduct = [
-//     { id: 131, to: "#", label: "УТЕПЛИТЕЛИ" },
-//     { id: 132, to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-//     { id: 133, to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-//     { id: 134, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
-// ];
-
 const popUpProductData = [
     {
         id: "1",
