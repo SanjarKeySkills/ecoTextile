@@ -1,24 +1,24 @@
 .popUpItemBlock {
-    width: 1440px;
+    padding: 0 24px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .popUpItemBlockWrapper {
-    padding: 48px;
+    padding: 24px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     border-radius: 8px;
     background-color: wheat;
-    gap: 32px;
+    gap: 24px;
 }
 .itemTitle {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
     img {
@@ -28,7 +28,7 @@
     h2 {
         font-size: 32px;
         font-weight: bold;
-        height: 240px;
+        height: 160px;
         background-color: #3d9970;
         display: flex;
         align-items: center;
@@ -43,10 +43,10 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    img {
-        width: 160px;
-        padding: 48px;
-    }
+}
+img {
+    width: 160px;
+    padding: 48px;
 }
 
 .popUpItemDescription {
@@ -82,9 +82,61 @@
     }
 }
 
-// .decoration {
-//     max-width: 240px;
-//     height: 120px;
-//     background-image: url(../../../../assets/popUpProduct/eco_1.png);
-//     background-size: cover;
-// }
+// Responcive
+
+@media (max-width: 1120px) {
+    .popUpItemBlock {
+        margin-top: 168px;
+    }
+    .itemTitle {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 112px;
+            width: 112px;
+        }
+        h2 {
+            font-size: 20px;
+            height: 112px;
+            padding: 0 16px;
+        }
+    }
+    .popUpItemInfo {
+        gap: 16px;
+    }
+    img {
+        width: 112px;
+        padding: 24px;
+    }
+    .popUpItemDescription {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .applyBtn {
+        padding: 24px;
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 808px) {
+    .popUpItemDescription {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .applyBtn {
+        h2 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 616px) {
+    .popUpItemDescription {
+        font-size: 14px;
+    }
+}

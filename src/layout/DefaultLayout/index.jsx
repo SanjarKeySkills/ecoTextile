@@ -10,7 +10,7 @@ const DefaultLayout = () => {
     return (
         <div className={styles.wrapper}>
             <Header />
-            <div className={styles.wrapper}>
+            <div className={styles.wrapperOutlet}>
                 <Outlet />
             </div>
             <Footer />

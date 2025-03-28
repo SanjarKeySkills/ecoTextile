@@ -72,7 +72,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className={styles.footerInfo}>
-                        <ul className={styles.footerList}>
+                        {/* <ul className={styles.footerList}>
                             {arrForRecycle.map((link) => (
                                 <li key={link.to}>
                                     <Link to={link.to} className={styles.link}>
@@ -80,10 +80,10 @@ const Footer = () => {
                                     </Link>
                                 </li>
                             ))}
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className={styles.footerInfo}>
-                        <ul className={styles.footerList}>
+                        {/* <ul className={styles.footerList}>
                             {arrForProduct.map((link) => (
                                 <li key={link.to}>
                                     <Link to={link.to} className={styles.link}>
@@ -91,7 +91,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                             ))}
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className={styles.footerAnnotation}>
                         <p>

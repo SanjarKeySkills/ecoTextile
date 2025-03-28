@@ -9,6 +9,9 @@ body {
     flex-direction: column;
     min-width: 100vh;
 }
+.wrapperOutlet {
+    width: 100%;
+}
 
 .content {
     flex-grow: 1;

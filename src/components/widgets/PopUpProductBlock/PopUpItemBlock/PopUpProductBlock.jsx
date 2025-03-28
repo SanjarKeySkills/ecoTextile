@@ -23,14 +23,13 @@ const PopUpProductBlock = () => {
             <div key={item.id} className={styles.popUpItemBlockWrapper}>
                 <div className={styles.itemTitle}>
                     <img src={item.image} alt="itemPage" />
-                    <h2 className={styles.itemName}>{item.name}</h2>
+                    <h2>{item.name}</h2>
                 </div>
                 <div className={styles.popUpItemInfo}>
-                    {/* <div className={styles.decoration}></div> */}
                     <img src={imgEco} alt="imgEco" />
-                    <p className={styles.popUpItemDescription}>
+                    <div className={styles.popUpItemDescription}>
                         {item.annotation}
-                    </p>
+                    </div>
                 </div>
                 <div className={styles.btnWrapper}>
                     <a href="/contact" className={styles.applyBtn}>
