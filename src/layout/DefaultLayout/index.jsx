@@ -10,9 +10,9 @@ const DefaultLayout = () => {
     return (
         <div className={styles.wrapper}>
             <Header />
-            <div className={styles.wrapperOutlet}>
+            {/* <div className={styles.wrapperOutlet}>
                 <Outlet />
-            </div>
+            </div> */}
             <Footer />
         </div>
     );
