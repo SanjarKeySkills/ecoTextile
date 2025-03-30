@@ -1,13 +1,14 @@
 .footer {
-    width: 100%;
+    width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: yellow;
 }
-.contactContainer {
-    max-width: 1440px;
-}
+// .contactContainer {
+//     max-width: 1440px;
+// }
 
 .footerWrapper {
     width: 100%;
