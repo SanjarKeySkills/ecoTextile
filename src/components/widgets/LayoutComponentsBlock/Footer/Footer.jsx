@@ -49,8 +49,8 @@ const arrSocial = [
 const Footer = () => {
     return (
         <div className={styles.footer}>
-            <div className={styles.contactContainer}>
-                <div className={styles.footerWrapper}>
+            <div className={styles.footerWrapper}>
+                <div className={styles.footerContainer}>
                     <div className={styles.footerContacts}>
                         <img src={footerLogo} alt="Footer Logo" />
                         <p>
@@ -71,35 +71,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className={styles.footerInfo}>
-                        {/* <ul className={styles.footerList}>
-                            {arrForRecycle.map((link) => (
-                                <li key={link.to}>
-                                    <Link to={link.to} className={styles.link}>
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul> */}
-                    </div>
-                    <div className={styles.footerInfo}>
-                        {/* <ul className={styles.footerList}>
-                            {arrForProduct.map((link) => (
-                                <li key={link.to}>
-                                    <Link to={link.to} className={styles.link}>
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul> */}
-                    </div>
                     <div className={styles.footerAnnotation}>
-                        <p>
-                            Do Customs является профессиональной организацией,
-                            добровольно объединяющей физических лиц, в лице
-                            национальных и международных независимых директоров
-                            и экспертов в области корпоративного управления.
-                        </p>
                         <ul className={styles.listLanFooter}>
                             {arrLan.map((link) => (
                                 <li key={link.to}>
@@ -125,7 +97,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className={styles.remarkContainer}>
+                <div className={styles.remarkWrapper}>
                     <p>
                         All rights reserved. Developed by "KEYSKILLS" LLC. The
                         Kyrgyz Republic Bishkek 2025.

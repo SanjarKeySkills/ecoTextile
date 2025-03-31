@@ -67,11 +67,6 @@ const Header = () => {
                     <div className={styles.lansDesctop}>
                         {arrLan.map((link) => (
                             <div className={styles.lan}>{link.label}</div>
-                            // <div key={link.id}>
-                            //     <Link to={link.to} className={styles.lan}>
-                            //         {link.label}
-                            //     </Link>
-                            // </div>
                         ))}
                     </div>
                 </div>
@@ -84,15 +79,6 @@ const Header = () => {
                             ЧТО ПЕРЕРАБАТЫВАЕМ
                         </Link>
                         <div className={styles.dropdownContent}>
-                            {/* {arrForRecycle.map((link) => (
-                                <div key={link.id}>
-                                    <Link
-                                        key={link.to}
-                                        className={styles.dropdownLink}>
-                                        {link.label}
-                                    </Link>
-                                </div>
-                            ))} */}
                             <PopUpProductCard />
                         </div>
                     </div>
@@ -101,18 +87,7 @@ const Header = () => {
                             ЧТО ПРОИЗВОДИМ
                         </Link>
                         <div className={styles.dropdownContent}>
-                            {/* {arrForProduct.map((link) => (
-                                <div key={link.id}>
-                                    <Link
-                                        key={link.to}
-                                        className={styles.dropdownLink}>
-                                        {link.label}
-                                    </Link>
-                                </div>
-                            ))} */}
                             <PopUpGoodsCard />
-
-                            {/* <PopUpProductCard /> */}
                         </div>
                     </div>
                 </div>
