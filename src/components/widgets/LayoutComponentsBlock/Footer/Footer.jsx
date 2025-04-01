@@ -18,23 +18,7 @@ const arrLan = [
     { to: "#", label: "EN" },
     { to: "#", label: "RU" },
 ];
-const arrForRecycle = [
-    { id: 121, to: "#", label: "ХЛОПОК" },
-    { id: 122, to: "#", label: "ПОЛИЭСТЕР" },
-    { id: 123, to: "#", label: "ШЕРСТЬ" },
-    { id: 124, to: "#", label: "ЛЕН" },
-    { id: 125, to: "#", label: "НЕЙЛОН" },
-    { id: 126, to: "#", label: "ВИСКОЗА" },
-    { id: 127, to: "#", label: "СПАНДЕКС (ЭЛАСТАН)" },
-    { id: 128, to: "#", label: "ДЕНИМ (ДЖИНСОВАЯ ТКАНЬ)" },
-    { id: 129, to: "#", label: "АКРИЛ" },
-];
-const arrForProduct = [
-    { id: 131, to: "#", label: "УТЕПЛИТЕЛИ" },
-    { id: 132, to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-    { id: 133, to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { id: 134, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
-];
+
 const arrSocial = [
     {
         to: "https://www.instagram.com/invoicepluss?igsh=MWc2c2p4cnd3eW43Nw==",

@@ -19,11 +19,11 @@
     gap: 300px;
 }
 .footerContacts {
-    padding: 16px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     img {
         max-width: 312px;
     }
@@ -31,6 +31,7 @@
         color: #ffffff;
         padding: 16px;
         margin: 0;
+        text-align: center;
     }
 }
 .footerInfo {
@@ -53,16 +54,14 @@
         }
     }
 }
-
-li {
-    padding-inline-start: 0;
-    list-style-type: none;
-}
-
 .footerAnnotation {
-    padding-right: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 }
-
 .listLanFooter {
     display: flex;
     flex-direction: row;
@@ -70,7 +69,6 @@ li {
     justify-content: center;
     gap: 16px;
     .lan {
-        border: none;
         font-size: 12px;
         font-weight: bold;
         text-align: center;
@@ -89,7 +87,7 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 160px;
+    gap: 32px;
     img {
         width: 48px;
     }
@@ -103,6 +101,7 @@ li {
     background-color: #9ea09d;
     p {
         color: #ffffff;
+        text-align: center;
     }
 }
 
@@ -113,119 +112,55 @@ li {
         img {
             max-width: 200px;
         }
-        p {
-            padding: 8px;
-        }
     }
     .footerContainer {
         gap: 240px;
     }
 }
-
 @media (max-width: 1120px) {
     .footerContainer {
         margin-top: 108px;
+        gap: 120px;
+    }
+}
+@media (max-width: 896px) {
+    .footerContainer {
+        gap: 96px;
+    }
+}
+@media (max-width: 868px) {
+    .footerContainer {
+        gap: 16px;
     }
 }
 
-@media (max-width: 608px) {
-}
-
-@media (max-width: 424px) {
-}
-
-@media (max-width: 928px) {
-    .footerContacts {
-        p {
-            font-size: 12px;
-        }
-    }
-    .footerInfo {
-        .link {
-            font-size: 10px;
-        }
-    }
-    .listLanFooter {
-        .lan {
-            font-size: 12px;
-        }
-    }
-    .footerAnnotation {
-        p {
-            min-width: 240px;
-            font-size: 12px;
-        }
-    }
-    .remarkContainer {
-        p {
-            font-size: 10px;
-        }
-    }
-}
-@media (max-width: 880px) {
-    .footerContacts {
-        p {
-            font-size: 20px;
-        }
-    }
-
-    .footerWrapper {
-        padding: 24px 0;
+@media (max-width: 728px) {
+    .footerContainer {
         flex-direction: column;
-    }
-    .footerAnnotation {
-        padding: 24px;
-        display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        p {
-            min-width: 0;
-        }
+        gap: 0px;
     }
-    .footerInfo {
-        .link {
-            font-size: 16px;
-        }
-    }
-    .footerAnnotation {
+    .remarkWrapper {
         p {
-            min-width: 240px;
-            font-size: 16px;
+            font-size: 12px;
         }
     }
 }
+
 @media (max-width: 424px) {
-    .remarkContainer {
-        p {
-            font-size: 8px;
-        }
+    .footerAnnotation {
+        padding: 16px;
     }
     .footerContacts {
+        padding: 8px;
+        justify-content: center;
+        img {
+            max-width: 160px;
+        }
         p {
-            font-size: 12px;
-        }
-    }
-    .footerInfo {
-        .link {
-            font-size: 10px;
-        }
-    }
-    .listLanFooter {
-        .lan {
-            font-size: 12px;
-        }
-    }
-    .footerAnnotation {
-        p {
-            min-width: 240px;
-            font-size: 12px;
-        }
-    }
-    .remarkContainer {
-        p {
-            font-size: 10px;
-            padding: 0 8px;
+            padding: 8px 0;
+            font-size: 14px;
         }
     }
 }
