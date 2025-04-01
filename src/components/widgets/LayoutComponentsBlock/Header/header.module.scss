@@ -128,15 +128,15 @@
     align-items: center;
     flex-direction: row;
     z-index: 7;
-    background-color: #fff;
+    background-color: yellow;
 }
 
 .headerMobileWrapper {
-    width: 1440px;
-    padding: 16px 24px;
+    padding: 16px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 160px;
     border-bottom: 4px solid #018e49;
 
     .headerLogo {

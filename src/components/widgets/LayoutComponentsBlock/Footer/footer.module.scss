@@ -111,36 +111,20 @@ li {
 @media (max-width: 1376px) {
     .footerContacts {
         img {
-            max-width: 240px;
+            max-width: 200px;
         }
         p {
             padding: 8px;
         }
     }
-}
-@media (max-width: 1296px) {
-    .footerContacts {
-        img {
-            max-width: 200px;
-        }
-    }
-}
-@media (max-width: 1280px) {
     .footerContainer {
         gap: 240px;
     }
-    .footerContacts {
-        img {
-            max-width: 160px;
-        }
-    }
 }
-@media (max-width: 1140px) {
-    .footerWrapper {
-        margin-top: 100px;
-    }
+
+@media (max-width: 1120px) {
     .footerContainer {
-        gap: 80px;
+        margin-top: 108px;
     }
 }
 
@@ -150,13 +134,6 @@ li {
 @media (max-width: 424px) {
 }
 
-@media (max-width: 1024px) {
-    .footerContacts {
-        img {
-            max-width: 240px;
-        }
-    }
-}
 @media (max-width: 928px) {
     .footerContacts {
         p {
