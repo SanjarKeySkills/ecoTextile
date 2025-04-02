@@ -132,7 +132,6 @@
         gap: 0;
     }
 }
-
 @media (max-width: 728px) {
     .footerContainer {
         flex-direction: column;
@@ -146,7 +145,6 @@
         }
     }
 }
-
 @media (max-width: 424px) {
     .footer {
         width: auto;
@@ -154,7 +152,6 @@
     .footerWrapper {
         width: 80%;
     }
-
     .footerAnnotation {
         padding: 16px;
     }
