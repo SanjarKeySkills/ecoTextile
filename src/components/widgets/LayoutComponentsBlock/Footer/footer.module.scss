@@ -10,7 +10,6 @@
     padding: 0 24px;
 }
 .footerContainer {
-    width: 100%;
     background-color: #013a3c;
     display: flex;
     flex-direction: row;
@@ -130,7 +129,7 @@
 }
 @media (max-width: 868px) {
     .footerContainer {
-        gap: 16px;
+        gap: 0;
     }
 }
 
@@ -149,11 +148,18 @@
 }
 
 @media (max-width: 424px) {
+    .footer {
+        width: auto;
+    }
+    .footerWrapper {
+        width: 80%;
+    }
+
     .footerAnnotation {
         padding: 16px;
     }
     .footerContacts {
-        padding: 8px;
+        padding: 16px 8px;
         justify-content: center;
         img {
             max-width: 160px;
