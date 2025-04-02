@@ -76,7 +76,7 @@
 @media (max-width: 448px) {
     .heroTitle {
         padding: 4px;
-        width: 64%;
+        width: 48%;
         p {
             font-size: 14px;
         }
@@ -84,15 +84,6 @@
 }
 @media (max-width: 376px) {
     .heroTitle {
-        padding: 0;
-        width: 48%;
-        p {
-            font-size: 12px;
-        }
-    }
-    .heroImg {
-        .imageTop {
-            max-width: 100%;
-        }
+        display: none;
     }
 }
