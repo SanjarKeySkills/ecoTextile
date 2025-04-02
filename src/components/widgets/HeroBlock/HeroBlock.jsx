@@ -15,7 +15,7 @@ const HeroBlock = () => {
                         />
                     </div>
                     <div className={styles.heroTitle}>
-                        <p className={styles.heroTitleText}>
+                        <p>
                             ЭФФЕКТИВНАЯ <br />
                             Переработка отходов швейной отрасли
                         </p>
