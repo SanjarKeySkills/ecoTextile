@@ -6,7 +6,7 @@
     justify-content: center;
 }
 .footerWrapper {
-    max-width: 1440px;
+    max-width: 100%;
     padding: 0 24px;
 }
 .footerContainer {
@@ -16,6 +16,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 300px;
+    box-sizing: border-box;
 }
 .footerContacts {
     padding: 32px;
@@ -23,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
     img {
         max-width: 312px;
     }
@@ -132,13 +134,21 @@
         gap: 0;
     }
 }
-@media (max-width: 728px) {
+
+@media (max-width: 768px) {
     .footerContainer {
+        gap: 16px; /* Уменьшаем gap для мобильных устройств */
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 0px;
     }
+    .headerLogo {
+        max-width: 200px; /* Уменьшаем размер логотипа */
+    }
+}
+
+@media (max-width: 728px) {
     .remarkWrapper {
         p {
             font-size: 12px;
@@ -149,9 +159,7 @@
     .footer {
         width: auto;
     }
-    .footerWrapper {
-        width: 80%;
-    }
+
     .footerAnnotation {
         padding: 16px;
     }
