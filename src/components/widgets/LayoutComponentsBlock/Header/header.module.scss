@@ -261,6 +261,7 @@
     .headerMobileWrapper {
         padding: 16px;
         gap: 36px;
+        background-color: aqua;
     }
     .popUpListWrapper {
         align-items: center;
@@ -296,6 +297,7 @@
 }
 @media (max-width: 480px) {
     .headerMobileWrapper {
+        background-color: red;
         .headerLogo {
             width: 160px;
         }
@@ -305,6 +307,9 @@
     }
 }
 @media (max-width: 424px) {
+    .headerMobileWrapper {
+        background-color: greenyellow;
+    }
     .popUpMobile {
         height: auto;
     }
