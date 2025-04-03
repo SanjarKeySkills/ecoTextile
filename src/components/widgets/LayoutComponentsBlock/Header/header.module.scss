@@ -7,22 +7,22 @@
 }
 .headerContainer {
     width: 1440px;
-    padding: 0 24px 16px;
+    padding: 0 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
     background-color: blue;
 }
 // Header desctop up
 .headerUp {
+    max-width: 100%;
+    padding: 0 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    box-sizing: border-box;
+    gap: 8px;
     background-color: yellow;
     .headerLogo {
         width: 320px;
@@ -68,8 +68,7 @@
     justify-content: center;
     flex-direction: row;
     background-color: #013a3c;
-    gap: 160px;
-    box-sizing: border-box;
+    // gap: 160px;
 }
 // dropdown button
 .dropdown {
@@ -130,10 +129,9 @@
     align-items: center;
     flex-direction: row;
     z-index: 7;
-    background-color: wheat;
 }
 .headerMobileWrapper {
-    max-width: 100%;
+    width: 100%;
     padding: 8px 24px;
     display: flex;
     justify-content: space-between;
@@ -231,25 +229,32 @@
 }
 
 // -----------------------------------
-// Responcive
-@media (max-width: 1240px) {
+// Desctop responcive menu
+
+@media (max-width: 1184px) {
+    .headerContainer {
+        padding: 0 8px;
+    }
     .headerUp {
-        gap: 16px;
+        gap: 8px;
         ul {
-            gap: 24px;
+            gap: 32px;
         }
     }
 }
-@media (max-width: 1140px) {
-    .headerUp {
-        .headerLogo {
-            width: 280px;
-        }
-        ul {
-            gap: 8px;
-        }
-    }
-}
+// @media (max-width: 1140px) {
+//     .headerUp {
+//         .headerLogo {
+//             width: 280px;
+//         }
+//         ul {
+//             gap: 8px;
+//         }
+//     }
+// }
+
+// Mobile responcive menu
+
 @media (max-width: 1120px) {
     .headerContainer {
         display: none;
@@ -258,48 +263,12 @@
         display: flex;
     }
 }
-@media (max-width: 608px) {
+
+@media (max-width: 424px) {
     .headerMobileWrapper {
-        padding: 16px;
-        background-color: aqua;
-    }
-    .popUpListWrapper {
-        align-items: center;
-        justify-content: center;
-        p {
-            margin-block-start: 0;
-            margin-block-end: 4px;
-        }
-    }
-    .headerLogo {
-        width: 224px;
-    }
-    .arrowPopupImg {
-        width: 48px;
-    }
-    .wrapperPopUp {
-        li {
-            padding-bottom: 8px;
-        }
-    }
-    .popUpListContainer {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        padding: 0;
-    }
-    .popUpList {
-        align-items: center;
-        .link {
-            font-size: 14px;
-        }
-    }
-}
-@media (max-width: 480px) {
-    .headerMobileWrapper {
-        background-color: red;
+        padding: 8px 16px;
         .headerLogo {
-            width: 160px;
+            width: 240px;
         }
         .burgerBtn {
             width: 32px;
@@ -307,17 +276,66 @@
     }
 }
 
-@media (max-width: 448px) {
-    .headerMobileWrapper {
-        background-color: rgb(128, 0, 111);
-    }
-}
+// @media (max-width: 608px) {
+//     .headerMobileWrapper {
+//         padding: 16px;
+//         background-color: aqua;
+//     }
+//     .popUpListWrapper {
+//         align-items: center;
+//         justify-content: center;
+//         p {
+//             margin-block-start: 0;
+//             margin-block-end: 4px;
+//         }
+//     }
+//     .headerLogo {
+//         width: 224px;
+//     }
+//     .arrowPopupImg {
+//         width: 48px;
+//     }
+//     .wrapperPopUp {
+//         li {
+//             padding-bottom: 8px;
+//         }
+//     }
+//     .popUpListContainer {
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 8px;
+//         padding: 0;
+//     }
+//     .popUpList {
+//         align-items: center;
+//         .link {
+//             font-size: 14px;
+//         }
+//     }
+// }
+// @media (max-width: 480px) {
+//     .headerMobileWrapper {
+//         background-color: red;
+//         .headerLogo {
+//             width: 160px;
+//         }
+//         .burgerBtn {
+//             width: 32px;
+//         }
+//     }
+// }
 
-@media (max-width: 424px) {
-    .headerMobileWrapper {
-        background-color: greenyellow;
-    }
-    .popUpMobile {
-        height: auto;
-    }
-}
+// @media (max-width: 448px) {
+//     .headerMobileWrapper {
+//         background-color: rgb(128, 0, 111);
+//     }
+// }
+
+// @media (max-width: 424px) {
+//     .headerMobileWrapper {
+//         background-color: greenyellow;
+//     }
+//     .popUpMobile {
+//         height: auto;
+//     }
+// }
