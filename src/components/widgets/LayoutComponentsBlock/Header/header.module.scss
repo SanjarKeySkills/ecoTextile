@@ -306,6 +306,13 @@
         }
     }
 }
+
+@media (max-width: 448px) {
+    .headerMobileWrapper {
+        background-color: green;
+    }
+}
+
 @media (max-width: 424px) {
     .headerMobileWrapper {
         background-color: greenyellow;
