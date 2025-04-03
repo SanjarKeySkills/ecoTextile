@@ -6,7 +6,7 @@
     align-items: center;
 }
 .headerContainer {
-    width: 100%;
+    width: 1440px;
     padding: 0 24px 16px;
     display: flex;
     justify-content: center;
@@ -17,7 +17,6 @@
 }
 // Header desctop up
 .headerUp {
-    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,7 +63,6 @@
 }
 // Header desctop bottom
 .headerBottom {
-    max-width: 100%;
     padding: 16px;
     display: flex;
     justify-content: center;
@@ -79,7 +77,7 @@
     display: inline-block;
 }
 .dropdownButton {
-    padding: 8px 24px;
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     background-color: #ff851b;
@@ -139,6 +137,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    background-color: yellow;
     border-bottom: 4px solid #018e49;
     gap: 136px;
     .headerLogo {
@@ -203,7 +202,6 @@
     }
 }
 .popUpListContainer {
-    width: 100%;
     padding: 0 8px;
     display: flex;
     flex-direction: row;
@@ -298,14 +296,15 @@
 }
 @media (max-width: 480px) {
     .headerMobileWrapper {
-        gap: 8px;
-        padding: 8px;
+        .headerLogo {
+            width: 160px;
+        }
+        .burgerBtn {
+            width: 32px;
+        }
     }
 }
 @media (max-width: 424px) {
-    .headerLogo {
-        width: 184px;
-    }
     .popUpMobile {
         height: auto;
     }
