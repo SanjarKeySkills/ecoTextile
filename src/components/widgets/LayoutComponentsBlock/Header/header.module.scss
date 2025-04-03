@@ -133,14 +133,14 @@
     background-color: wheat;
 }
 .headerMobileWrapper {
+    max-width: 100%;
     padding: 8px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    // background-color: #fff;
     background-color: yellow;
     border-bottom: 4px solid #018e49;
-    gap: 480px;
     .headerLogo {
         width: 320px;
     }
@@ -261,7 +261,6 @@
 @media (max-width: 608px) {
     .headerMobileWrapper {
         padding: 16px;
-        gap: 240px;
         background-color: aqua;
     }
     .popUpListWrapper {
