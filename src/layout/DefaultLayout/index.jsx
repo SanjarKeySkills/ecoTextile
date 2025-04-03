@@ -8,7 +8,7 @@ export const ContentFallback = () => <div className={styles.loader}></div>;
 
 const DefaultLayout = () => {
     return (
-        <div className={styles.wrapper}>
+        <div>
             <Header />
             {/* <div className={styles.wrapperOutlet}>
                 <Outlet />
