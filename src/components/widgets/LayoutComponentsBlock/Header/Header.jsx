@@ -70,24 +70,25 @@ const Header = () => {
                         ))}
                     </div>
                 </div>
-
                 {/* Header bottom */}
                 <div className={styles.headerBottom}>
                     {/* dropdownButton */}
-                    <div className={styles.dropdown}>
-                        <Link className={styles.dropdownButton}>
-                            ЧТО ПЕРЕРАБАТЫВАЕМ
-                        </Link>
-                        <div className={styles.dropdownContent}>
-                            <PopUpProductCard />
+                    <div className={styles.dropdownWrapper}>
+                        <div className={styles.dropdown}>
+                            <Link className={styles.dropdownButton}>
+                                ЧТО ПЕРЕРАБАТЫВАЕМ
+                            </Link>
+                            <div className={styles.dropdownContent}>
+                                <PopUpProductCard />
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.dropdown}>
-                        <Link className={styles.dropdownButton}>
-                            ЧТО ПРОИЗВОДИМ
-                        </Link>
-                        <div className={styles.dropdownContent}>
-                            <PopUpGoodsCard />
+                        <div className={styles.dropdown}>
+                            <Link className={styles.dropdownButton}>
+                                ЧТО ПРОИЗВОДИМ
+                            </Link>
+                            <div className={styles.dropdownContent}>
+                                <PopUpGoodsCard />
+                            </div>
                         </div>
                     </div>
                 </div>
