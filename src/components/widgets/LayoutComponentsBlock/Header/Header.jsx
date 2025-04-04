@@ -20,23 +20,6 @@ const arrLan = [
     { id: 2, to: "/en", label: "EN" },
     { id: 3, to: "/ru", label: "RU" },
 ];
-const arrForRecycle = [
-    { id: 121, to: "#", label: "ХЛОПОК" },
-    { id: 122, to: "#", label: "ПОЛИЭСТЕР" },
-    { id: 123, to: "#", label: "ШЕРСТЬ" },
-    { id: 124, to: "#", label: "ЛЕН" },
-    { id: 125, to: "#", label: "НЕЙЛОН" },
-    { id: 126, to: "#", label: "ВИСКОЗА" },
-    { id: 127, to: "#", label: "СПАНДЕКС (ЭЛАСТАН)" },
-    { id: 128, to: "#", label: "ДЕНИМ (ДЖИНСОВАЯ ТКАНЬ)" },
-    { id: 129, to: "#", label: "АКРИЛ" },
-];
-const arrForProduct = [
-    { id: 131, to: "#", label: "УТЕПЛИТЕЛИ" },
-    { id: 132, to: "#", label: "БАЗАЛЬТОВЫЙ УТЕПЛИТЕЛЬ" },
-    { id: 133, to: "#", label: "СТРОИТЕЛЬНЫЕ ПЕРЧАТКИ" },
-    { id: 134, to: "#", label: "ТЕХНИЧЕСКИЕ ТКАНИ" },
-];
 
 // Header Desctop menu
 const Header = () => {
@@ -162,32 +145,6 @@ const HeaderMobileMenu = (props) => {
                         </li>
                     ))}
                 </ul>
-            </div>
-            <div className={styles.popUpListContainer}>
-                <div className={styles.popUpListWrapper}>
-                    <p>ЧТО ПЕРЕРАБАТЫВАЕМ</p>
-                    <div className={styles.popUpList}>
-                        {arrForRecycle.map((link) => (
-                            <div key={link.id}>
-                                <Link key={link.to} className={styles.link}>
-                                    {link.label}
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className={styles.popUpListWrapper}>
-                    <p>ЧТО ПРОИЗВОДИМ</p>
-                    <div className={styles.popUpList}>
-                        {arrForProduct.map((link) => (
-                            <div key={link.id}>
-                                <Link key={link.to} className={styles.link}>
-                                    {link.label}
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
             </div>
         </div>
     );
