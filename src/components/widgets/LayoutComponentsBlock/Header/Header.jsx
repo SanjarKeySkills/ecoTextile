@@ -103,7 +103,6 @@ const Header = () => {
         </div>
     );
 };
-
 export default Header;
 
 // Header popUp
@@ -121,7 +120,7 @@ const HeaderMobileMenu = (props) => {
                     onClick={togglePopup}
                     className={styles.arrowPopupImg}
                 />
-                <ul className={styles.listNavbarPopUp}>
+                {/* <ul className={styles.listNavbarPopUp}>
                     {arrLinks.map((link) => (
                         <li key={link.id}>
                             <Link
@@ -132,8 +131,8 @@ const HeaderMobileMenu = (props) => {
                             </Link>
                         </li>
                     ))}
-                </ul>
-                <ul className={styles.listLanPopUp}>
+                </ul> */}
+                {/* <ul className={styles.listLanPopUp}>
                     {arrLan.map((link) => (
                         <li key={link.id}>
                             <Link
@@ -144,7 +143,7 @@ const HeaderMobileMenu = (props) => {
                             </Link>
                         </li>
                     ))}
-                </ul>
+                </ul> */}
             </div>
         </div>
     );
