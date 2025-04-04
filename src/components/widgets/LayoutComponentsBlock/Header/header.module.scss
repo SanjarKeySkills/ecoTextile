@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 128px;
     background-color: yellow;
     .headerLogo {
         width: 320px;
@@ -230,6 +230,47 @@
 
 // -----------------------------------
 // Desctop responcive menu
+
+@media (max-width: 1432px) {
+    .headerUp {
+        gap: 112px;
+    }
+}
+@media (max-width: 1392px) {
+    .headerUp {
+        gap: 96px;
+    }
+}
+@media (max-width: 1352px) {
+    .headerUp {
+        gap: 80px;
+    }
+}
+@media (max-width: 1352px) {
+    .headerUp {
+        gap: 80px;
+    }
+}
+@media (max-width: 1328px) {
+    .headerUp {
+        gap: 64px;
+    }
+}
+@media (max-width: 1296px) {
+    .headerUp {
+        gap: 40px;
+    }
+}
+@media (max-width: 1264px) {
+    .headerUp {
+        gap: 24px;
+    }
+}
+@media (max-width: 1224px) {
+    .headerUp {
+        gap: 8px;
+    }
+}
 
 @media (max-width: 1184px) {
     .headerContainer {
