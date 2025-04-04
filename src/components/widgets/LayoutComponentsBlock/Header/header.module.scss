@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 128px;
-    background-color: yellow;
+    background-color: #ffffff;
     .headerLogo {
         width: 320px;
         padding: 8px 0;
@@ -63,7 +63,6 @@
 .headerBottom {
     width: 100%;
 }
-
 // dropdown button
 .dropdownWrapper {
     width: 100%;
@@ -73,7 +72,6 @@
     flex-direction: row;
     background-color: #013a3c;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -139,8 +137,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: #fff;
-    background-color: yellow;
+    background-color: #fff;
     border-bottom: 4px solid #018e49;
     .headerLogo {
         width: 320px;
