@@ -1,54 +1,59 @@
 .footer {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+.footerWrapper {
+    max-width: 1440px;
+    padding: 0 24px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.footerWrapper {
-    max-width: 100%;
-    padding: 0 24px;
-}
 .footerContainer {
+    width: 100%;
     background-color: #013a3c;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 300px;
-    box-sizing: border-box;
+    gap: 296px;
 }
 .footerContacts {
-    padding: 32px;
+    padding: 32px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     img {
-        max-width: 312px;
+        max-width: 320px;
     }
     p {
         color: #ffffff;
         padding: 16px;
-        margin: 0;
         text-align: center;
     }
 }
 .footerInfo {
     padding: 8px;
-    text-align: center;
 }
 .footerList {
+    text-align: center;
     list-style-type: none;
     padding-inline-start: 0;
     li {
-        padding-bottom: 8px;
+        padding-bottom: 16px;
+    }
+    li:last-child {
+        padding-bottom: 0;
     }
     .link {
         color: #ffffff;
-        font-weight: bold;
-        font-size: 12px;
+        font-size: 14px;
         text-decoration: none;
         &:hover {
             color: #447ac6;
@@ -56,7 +61,7 @@
     }
 }
 .footerAnnotation {
-    padding: 32px;
+    padding: 0 32px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,14 +73,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     .lan {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
         padding: 8px;
-        border-radius: 4px;
+        border-radius: 8px;
         background-color: #ff851b;
         color: #ffffff;
         &:hover {
@@ -88,13 +93,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 80px;
     img {
         width: 48px;
     }
 }
 
 .remarkWrapper {
+    width: 100%;
     padding: 8px 0;
     display: flex;
     justify-content: center;
@@ -108,70 +114,27 @@
 
 // -----------------------------------
 // Responcive
-@media (max-width: 1376px) {
-    .footerContacts {
-        img {
-            max-width: 200px;
-        }
-    }
+@media (max-width: 1296px) {
     .footerContainer {
-        gap: 240px;
+        gap: 220px;
     }
 }
-@media (max-width: 1120px) {
+@media (max-width: 1144px) {
     .footerContainer {
-        margin-top: 108px;
-        gap: 120px;
+        gap: 160px;
     }
 }
-@media (max-width: 896px) {
+@media (max-width: 1140px) {
     .footerContainer {
-        gap: 96px;
+        gap: 152px;
     }
 }
-@media (max-width: 868px) {
-    .footerContainer {
-        gap: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .footerContainer {
-        gap: 16px; /* Уменьшаем gap для мобильных устройств */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-    }
-    .headerLogo {
-        max-width: 200px; /* Уменьшаем размер логотипа */
-    }
-}
-
-@media (max-width: 728px) {
-    .remarkWrapper {
-        p {
-            font-size: 12px;
-        }
-    }
-}
-@media (max-width: 424px) {
-    .footer {
-        width: auto;
+@media (max-width: 1136px) {
+    .footerWrapper {
+        margin-top: 88px;
     }
 
-    .footerAnnotation {
-        padding: 16px;
-    }
-    .footerContacts {
-        padding: 16px 8px;
-        justify-content: center;
-        img {
-            max-width: 160px;
-        }
-        p {
-            padding: 8px 0;
-            font-size: 14px;
-        }
+    .footerContainer {
+        gap: 150px;
     }
 }

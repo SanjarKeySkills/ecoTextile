@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 16px;
 }
 // Header desctop up
 .headerUp {
@@ -203,14 +204,12 @@
         }
     }
 }
-
 .popUpListContainer {
     padding: 0 8px;
     display: flex;
     flex-direction: row;
     gap: 64px;
     justify-content: center;
-    background-color: yellow;
 }
 .popUpListWrapper {
     display: flex;
@@ -245,10 +244,6 @@
     .headerUp {
         gap: 96px;
     }
-    // .headerBottom {
-    //     padding: 16px 332px;
-    //     gap: 320px;
-    // }
 }
 @media (max-width: 1352px) {
     .headerUp {
@@ -276,9 +271,6 @@
     }
 }
 @media (max-width: 1184px) {
-    .headerContainer {
-        padding: 0 8px;
-    }
     .headerUp {
         gap: 8px;
         ul {
@@ -289,7 +281,7 @@
 
 // Mobile responcive menu
 
-@media (max-width: 1120px) {
+@media (max-width: 1136px) {
     .headerContainer {
         display: none;
     }
