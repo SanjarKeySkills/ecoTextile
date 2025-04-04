@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
 }
 .footerWrapper {
     max-width: 1440px;
@@ -215,7 +214,7 @@
     .footerContainer {
         flex-direction: column;
         justify-content: center;
-        gap: 16px;
+        gap: 32px;
     }
     .footerContacts {
         padding: 16px 16px 0px;
@@ -226,16 +225,25 @@
             text-align: center;
         }
     }
+
     .footerAnnotation {
         padding: 0;
         gap: 24px;
     }
+    .listLanFooter {
+        gap: 16px;
+        .lan {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+    .listSocialFooter {
+        gap: 56px;
+        img {
+            width: 48px;
+        }
+    }
     .remarkWrapper {
         font-size: 12px;
-    }
-    .footerList {
-        li {
-            padding-bottom: 8px;
-        }
     }
 }
