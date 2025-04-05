@@ -11,7 +11,7 @@ const MediaBlock = () => {
     return (
         <div className={styles.mediaBlock}>
             <div className={styles.mediaContainer}>
-                {/* <div className={styles.videoWrapper}>
+                <div className={styles.videoWrapper}>
                     <video
                         src={videoBg}
                         loop
@@ -19,9 +19,9 @@ const MediaBlock = () => {
                         ref={videoRef}
                         className={styles.videoBlock}></video>
                     <p className={styles.heroManifest}>
-                        ДОВЕРЯЙТЕ ПЕРЕРАБОТКУ ОТХОДОВ ПРОФЕССИОНАЛАМ
+                        ДОВЕРЯЙТЕ ПЕРЕРАБОТКУ ПРОФЕССИОНАЛАМ
                     </p>
-                </div> */}
+                </div>
 
                 {/* <div className={styles.mediaContent}>
                     <p className={styles.mediaText}>
