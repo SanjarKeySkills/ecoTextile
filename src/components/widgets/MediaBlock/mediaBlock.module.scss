@@ -10,9 +10,22 @@
     max-width: 1440px;
     padding: 0 24px 24px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 24px;
     align-items: center;
     justify-content: center;
+}
+.mediaContent {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 24px;
+    font-weight: 500;
+    background-color: #018e49;
+    text-align: justify;
+}
+.mediaText {
+    color: #ffffff;
+    font-size: 20px;
 }
 .videoWrapper {
     width: 100%;
@@ -38,24 +51,6 @@
     font-weight: bold;
     color: #013a3c;
     background-color: #ffffff;
-}
-
-.mediaContent {
-    font-size: 16px;
-    border-radius: 8px;
-    padding: 24px;
-    font-weight: 500;
-    background-color: #013a3c;
-    text-align: justify;
-}
-.mediaText {
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.manifestBlock {
-    max-width: 1440px;
-    display: flex;
 }
 
 // Responcive
@@ -144,7 +139,6 @@
     }
     .heroManifest {
         font-size: 16px;
-        border-radius: 0;
         bottom: 15%;
         color: #ffffff;
         background-color: #018e49;
@@ -166,6 +160,9 @@
     }
 }
 @media (max-width: 480px) {
+    .mediaText {
+        font-size: 16px;
+    }
     .videoBlock {
         width: 336px;
         height: 264px;
@@ -181,41 +178,20 @@
     .videoBlock {
         width: 272px;
     }
+    .mediaText {
+        font-size: 14px;
+    }
 }
 
-// @media (max-width: 1344px) {
-//     .mediaText {
-//         // font-size: 16px;
-//         padding: 8px;
-//         margin: 0;
-//     }
-
-//     .heroManifest {
-//         max-width: 100%;
-//         padding: 8px;
-//     }
-// }
 // @media (max-width: 1144px) {
 //     .mediaContainer {
 //         flex-direction: column;
 //     }
 // }
-// @media (max-width: 1120px) {
-//     .heroManifest {
-//         padding: 8px;
-//     }
+
 // }
 // @media (max-width: 880px) {
-//     // .manifestBlock {
-//     //     padding: 0 24px 24px;
-//     // }
-//     .heroManifest {
-//         padding: 16px;
-//         font-size: 16px;
-//     }
 //     .videoBlock {
 //         padding: 0 24px 32px;
 //     }
 // }
-// background-color: #018e49;
-//
