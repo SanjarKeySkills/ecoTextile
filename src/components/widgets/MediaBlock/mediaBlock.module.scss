@@ -13,8 +13,34 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 32px;
 }
+.videoWrapper {
+    width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #018e49;
+}
+.videoBlock {
+    width: 1400px;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 8px;
+}
+.heroManifest {
+    padding: 8px 16px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #013a3c;
+    background-color: #ffffff;
+}
+
 .mediaContent {
     font-size: 16px;
     border-radius: 8px;
@@ -26,62 +52,45 @@
 .mediaText {
     color: #ffffff;
     font-size: 20px;
-    padding: 12px;
 }
-.videoBlock {
-    width: 100%;
-    object-fit: cover;
-    text-align: center;
-    border-radius: 8px;
-}
+
 .manifestBlock {
     max-width: 1440px;
     display: flex;
-    padding: 24px;
-}
-.heroManifest {
-    padding: 32px;
-    margin: 0;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    line-height: 48px;
-    color: #fff;
-    background-color: #ff851b;
-    border-radius: 8px;
+    // padding: 24px;
 }
 
-@media (max-width: 1344px) {
-    .mediaText {
-        font-size: 16px;
-        padding: 8px;
-        margin: 0;
-    }
+// @media (max-width: 1344px) {
+//     .mediaText {
+//         // font-size: 16px;
+//         padding: 8px;
+//         margin: 0;
+//     }
 
-    .heroManifest {
-        max-width: 100%;
-        padding: 8px;
-    }
-}
-@media (max-width: 1144px) {
-    .mediaContainer {
-        flex-direction: column;
-    }
-}
-@media (max-width: 1120px) {
-    .heroManifest {
-        padding: 8px;
-    }
-}
-@media (max-width: 880px) {
-    .manifestBlock {
-        padding: 0 24px 24px;
-    }
-    .heroManifest {
-        padding: 16px;
-        font-size: 16px;
-    }
-    .videoBlock {
-        padding: 0 24px 32px;
-    }
-}
+//     .heroManifest {
+//         max-width: 100%;
+//         padding: 8px;
+//     }
+// }
+// @media (max-width: 1144px) {
+//     .mediaContainer {
+//         flex-direction: column;
+//     }
+// }
+// @media (max-width: 1120px) {
+//     .heroManifest {
+//         padding: 8px;
+//     }
+// }
+// @media (max-width: 880px) {
+//     // .manifestBlock {
+//     //     padding: 0 24px 24px;
+//     // }
+//     .heroManifest {
+//         padding: 16px;
+//         font-size: 16px;
+//     }
+//     .videoBlock {
+//         padding: 0 24px 32px;
+//     }
+// }
