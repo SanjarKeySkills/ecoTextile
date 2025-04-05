@@ -171,6 +171,12 @@
         height: 264px;
     }
 }
+@media (max-width: 400px) {
+    .videoBlock {
+        width: 336px;
+        height: 216px;
+    }
+}
 
 // @media (max-width: 1344px) {
 //     .mediaText {
