@@ -167,14 +167,19 @@
 }
 @media (max-width: 480px) {
     .videoBlock {
-        width: 368px;
+        width: 336px;
         height: 264px;
     }
 }
 @media (max-width: 400px) {
     .videoBlock {
-        width: 336px;
+        width: 304px;
         height: 216px;
+    }
+}
+@media (max-width: 384px) {
+    .videoBlock {
+        width: 272px;
     }
 }
 
