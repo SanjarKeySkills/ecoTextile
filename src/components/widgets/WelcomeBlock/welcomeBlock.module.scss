@@ -11,22 +11,19 @@
     padding: 0 24px 24px;
 }
 .welcomeText {
-    font-size: 24px;
-    color: #fff;
-    padding: 32px;
-    margin: 0;
+    font-size: 20px;
+    // color: #013a3c;
+    color: #ffffff;
+    padding: 24px;
     text-align: justify;
-    background-color: #3d9970;
+    // background-color: #018e49;
+    background-color: #ff851b;
     border-radius: 8px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 480px) {
     .welcomeText {
-        font-size: 20px;
-    }
-}
-@media (max-width: 424px) {
-    .welcomeText {
-        line-height: 32px;
+        line-height: 24px;
+        font-size: 18px;
     }
 }

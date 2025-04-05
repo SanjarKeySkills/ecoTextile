@@ -161,7 +161,8 @@
 }
 @media (max-width: 480px) {
     .mediaText {
-        font-size: 16px;
+        line-height: 24px;
+        font-size: 18px;
     }
     .videoBlock {
         width: 336px;
@@ -177,8 +178,5 @@
 @media (max-width: 384px) {
     .videoBlock {
         width: 272px;
-    }
-    .mediaText {
-        font-size: 14px;
     }
 }
