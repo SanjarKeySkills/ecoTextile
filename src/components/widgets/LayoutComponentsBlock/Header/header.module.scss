@@ -281,7 +281,6 @@
 }
 
 // Mobile responcive menu
-
 @media (max-width: 1136px) {
     .headerContainer {
         display: none;
@@ -290,10 +289,9 @@
         display: flex;
     }
 }
-
 @media (max-width: 424px) {
     .headerMobileWrapper {
-        padding: 8px 16px;
+        padding: 16px 24px;
         .headerLogo {
             width: 240px;
         }
