@@ -1,18 +1,28 @@
 import React from "react";
 import styles from "./infotableBlock.module.scss";
+import PopUpProductCard from "../PopUpProductBlock/popUpProductCard/PopUpProductCard";
+import PopUpGoodsCard from "../PopUpProductBlock/PopUpGoodsCard/PopUpGoodsCard";
 
 const InfotableBlock = () => {
     return (
         <div className={styles.infoTableBlock}>
             <div className={styles.infoList}>
                 <p className={styles.infoText}>
-                    Компания "ECOTEXTILEPLUS" активно занимается переработкой
-                    отходов швейной отрасли. Растет уверенность, что практически
-                    любые ткани можно переработать в полезные и экологически
-                    безопасные материалы.
-                    <br />
-                    Ниже перечень тканей, которые мы перерабатываем:
+                    Компания "ECOTEXTILEPLUS" осуществляет переработку
+                    практически любых распространенных видов ткани в товары
+                    бытового и хозяйственного назначения.
                 </p>
+                <div className={styles.industrywrapper}>
+                    <div className={styles.industry}>
+                        <h3> ЧТО ПЕРЕРАБАТЫВАЕМ</h3>
+                        <PopUpProductCard />
+                    </div>
+                    <div className={styles.industry}>
+                        <h3> ЧТО ПРОИЗВОДИМ</h3>
+                        <PopUpGoodsCard />
+                    </div>
+                </div>
+
                 <div className={styles.infoCard}>
                     <div className={styles.industryBlock}>
                         <ul className={styles.listWrapper}>
