@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./infotableBlock.module.scss";
 import infoImg1 from "../../../assets/gallery/cloth_recycling_2.png";
-import infoImg2 from "../../../assets/gallery/recycling_clothes.png";
-import infoImg3 from "../../../assets/gallery/cloth_recycling.png";
+import infoImg2 from "../../../assets/gallery/recycle_pad.png";
+import infoImg3 from "../../../assets/gallery/production.png";
 
 import PopUpProductCard from "../PopUpProductBlock/popUpProductCard/PopUpProductCard";
 import PopUpGoodsCard from "../PopUpProductBlock/PopUpGoodsCard/PopUpGoodsCard";
@@ -10,19 +10,31 @@ import PopUpGoodsCard from "../PopUpProductBlock/PopUpGoodsCard/PopUpGoodsCard";
 const InfotableBlock = () => {
     return (
         <div className={styles.infoTableBlock}>
-            ррп6
             <div className={styles.infoList}>
+                <h1>НАШ ПРОИЗВОДСТВЕНЫЙ ЦИКЛ</h1>
                 <div className={styles.infoImg}>
-                    <img src={infoImg1} alt="infoImg1"></img>
-                    <img src={infoImg2} alt="infoImg2"></img>
-                    <img src={infoImg3} alt="infoImg3"></img>
+                    <div className={styles.imgWrapper}>
+                        <img src={infoImg1} alt="infoImg1"></img>
+                        <h4>Сбор отходов швейной отрасли</h4>
+                    </div>
+                    <div className={styles.imgWrapper}>
+                        <img src={infoImg2} alt="infoImg2"></img>
+                        <h4>Переработка отходов швейной отрасли</h4>
+                    </div>
+                    <div className={styles.imgWrapper}>
+                        <img src={infoImg3} alt="infoImg3"></img>
+                        <h4>
+                            Реализация товаров и переработанных отходов швейной
+                            отрасли
+                        </h4>
+                    </div>
                 </div>
-                <p className={styles.infoText}>
+                {/* <p className={styles.infoText}>
                     "ECOTEXTILEPLUS" перерабатывает широкий спектр тканей в
                     товары бытового и хозяйственного назначения.
-                </p>
+                </p> */}
                 <div className={styles.industrywrapper}>
-                    <div className={styles.industry}>
+                    {/* <div className={styles.industry}>
                         <h3> ЧТО ПЕРЕРАБАТЫВАЕМ</h3>
                         <div>
                             <PopUpProductCard />
@@ -33,10 +45,10 @@ const InfotableBlock = () => {
                         <div>
                             <PopUpGoodsCard />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className={styles.infoCard}>
+                {/* <div className={styles.infoCard}>
                     <div className={styles.industryBlock}>
                         <ul className={styles.listWrapper}>
                             <li>
@@ -106,7 +118,7 @@ const InfotableBlock = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
