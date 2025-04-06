@@ -38,15 +38,18 @@ h1 {
     }
 }
 
-.infoText {
-    font-size: 24px;
-    color: #013a3c;
-    padding: 0 24px;
-    text-align: center;
+.industryContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.industrywrapper {
+.industryWrapper {
+    width: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
     gap: 80px;
 }
@@ -110,7 +113,6 @@ h3 {
         }
     }
 }
-
 @media (max-width: 768px) {
     .infoList {
         padding-bottom: 16px;
@@ -133,74 +135,8 @@ h3 {
     .infoText {
         font-size: 18px;
     }
-    .industrywrapper {
-        gap: 40px;
+    .industryWrapper {
+        flex-direction: column;
+        gap: 24px;
     }
 }
-@media (max-width: 712px) {
-    .imgWrapper {
-        h4 {
-            font-size: 14px;
-        }
-    }
-    .infoText {
-        font-size: 16px;
-    }
-    .industrywrapper {
-        gap: 32px;
-    }
-}
-@media (max-width: 656px) {
-    // .infoImg {
-    //     max-width: 344px;
-    //     img {
-    //         max-width: 144px;
-    //     }
-    // }
-}
-@media (max-width: 480px) {
-    h1 {
-        font-size: 18px;
-    }
-}
-// .infoImg {
-//     flex-direction: column;
-//     max-width: 480px;
-//     gap: 24px;
-//     img {
-//         max-width: 320px;
-//     }
-// }
-.imgWrapper {
-    h4 {
-        font-size: 18px;
-    }
-}
-
-// @media (max-width: 1024px) {
-//     .infoTableBlock {
-//         padding: 24px 8px;
-//     }
-//     .industryBlock {
-//         width: 88%;
-//         border-radius: 8px;
-//         background-color: #ff851b;
-//     }
-//     .headList {
-//         height: auto;
-//     }
-//     .infoList {
-//         flex-direction: column;
-//         padding: 0 24px 40px;
-//     }
-//     .infoCard {
-//         flex-direction: column;
-//         gap: 16px;
-//     }
-// }
-// @media (max-width: 480px) {
-//     .infoText {
-//         font-size: 18px;
-//         line-height: 24px;
-//     }
-// }

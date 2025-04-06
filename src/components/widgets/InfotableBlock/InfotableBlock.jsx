@@ -26,23 +26,21 @@ const InfotableBlock = () => {
                         <h4>Реализация переработанных товаров</h4>
                     </div>
                 </div>
-                <p className={styles.infoText}>
-                    "ECOTEXTILEPLUS" перерабатывает широкий спектр тканей в
-                    товары бытового и хозяйственного назначения.
-                </p>
-                <div className={styles.industrywrapper}>
-                    {/* <div className={styles.industry}>
-                        <h3> ЧТО ПЕРЕРАБАТЫВАЕМ</h3>
-                        <div>
-                            <PopUpProductCard />
+                <div className={styles.industryContainer}>
+                    <div className={styles.industryWrapper}>
+                        <div className={styles.industry}>
+                            <h3> ЧТО ПЕРЕРАБАТЫВАЕМ</h3>
+                            <div>
+                                <PopUpProductCard />
+                            </div>
+                        </div>
+                        <div className={styles.industry}>
+                            <h3> ЧТО ПРОИЗВОДИМ</h3>
+                            <div>
+                                <PopUpGoodsCard />
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.industry}>
-                        <h3> ЧТО ПРОИЗВОДИМ</h3>
-                        <div>
-                            <PopUpGoodsCard />
-                        </div>
-                    </div> */}
                 </div>
 
                 {/* <div className={styles.infoCard}>
