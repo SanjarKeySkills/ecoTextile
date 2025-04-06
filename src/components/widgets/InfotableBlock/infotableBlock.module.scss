@@ -10,8 +10,18 @@
     justify-content: space-between;
     gap: 24px;
 }
+.infoImg {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 400px;
+    }
+}
 .infoText {
-    font-size: 20px;
+    font-size: 24px;
     color: #013a3c;
     padding: 0 24px;
     text-align: center;
@@ -19,23 +29,23 @@
 .industrywrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding: 24px;
     gap: 80px;
 }
-h3 {
-    padding-bottom: 16px;
-    font-weight: bold;
-}
-
 .industry {
     padding: 24px;
     width: 100%;
     color: #ffffff;
-    // background-color: #018e49;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     background-color: rgb(236, 236, 236);
     border-radius: 8px;
+}
+h3 {
+    padding-bottom: 16px;
+    font-weight: bold;
 }
 
 .infoCard {

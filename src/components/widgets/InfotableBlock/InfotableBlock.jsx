@@ -1,25 +1,38 @@
 import React from "react";
 import styles from "./infotableBlock.module.scss";
+import infoImg1 from "../../../assets/gallery/cloth_recycling_2.png";
+import infoImg2 from "../../../assets/gallery/recycling_clothes.png";
+import infoImg3 from "../../../assets/gallery/cloth_recycling.png";
+
 import PopUpProductCard from "../PopUpProductBlock/popUpProductCard/PopUpProductCard";
 import PopUpGoodsCard from "../PopUpProductBlock/PopUpGoodsCard/PopUpGoodsCard";
 
 const InfotableBlock = () => {
     return (
         <div className={styles.infoTableBlock}>
+            ррп6
             <div className={styles.infoList}>
+                <div className={styles.infoImg}>
+                    <img src={infoImg1} alt="infoImg1"></img>
+                    <img src={infoImg2} alt="infoImg2"></img>
+                    <img src={infoImg3} alt="infoImg3"></img>
+                </div>
                 <p className={styles.infoText}>
-                    Компания "ECOTEXTILEPLUS" осуществляет переработку
-                    практически любых распространенных видов ткани в товары
-                    бытового и хозяйственного назначения.
+                    "ECOTEXTILEPLUS" перерабатывает широкий спектр тканей в
+                    товары бытового и хозяйственного назначения.
                 </p>
                 <div className={styles.industrywrapper}>
                     <div className={styles.industry}>
                         <h3> ЧТО ПЕРЕРАБАТЫВАЕМ</h3>
-                        <PopUpProductCard />
+                        <div>
+                            <PopUpProductCard />
+                        </div>
                     </div>
                     <div className={styles.industry}>
                         <h3> ЧТО ПРОИЗВОДИМ</h3>
-                        <PopUpGoodsCard />
+                        <div>
+                            <PopUpGoodsCard />
+                        </div>
                     </div>
                 </div>
 
