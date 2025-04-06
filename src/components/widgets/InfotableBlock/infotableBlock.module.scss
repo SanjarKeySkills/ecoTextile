@@ -20,10 +20,8 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 560px;
-    img {
-        max-width: 320px;
-    }
+    max-width: 768px;
+    gap: 40px;
 }
 .imgWrapper {
     display: flex;
@@ -34,6 +32,9 @@ h1 {
         font-size: 24px;
         font-weight: bold;
         text-align: center;
+    }
+    img {
+        width: 100%;
     }
 }
 
@@ -103,43 +104,30 @@ h3 {
 }
 // Responcive
 @media (max-width: 1120px) {
-    .infoImg {
-        max-width: 504px;
-        img {
-            max-width: 264px;
-        }
-    }
     .imgWrapper {
         h4 {
             font-size: 18px;
         }
     }
 }
-@media (max-width: 880px) {
-    .infoImg {
-        max-width: 472px;
-        img {
-            max-width: 232px;
-        }
-    }
-}
+
 @media (max-width: 768px) {
     .infoList {
         padding-bottom: 16px;
         gap: 16px;
     }
     .infoImg {
-        max-width: 464px;
-        img {
-            max-width: 216px;
-        }
+        flex-direction: column;
     }
     h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
     .imgWrapper {
         h4 {
             font-size: 16px;
+        }
+        img {
+            max-width: 75%;
         }
     }
     .infoText {
@@ -150,15 +138,6 @@ h3 {
     }
 }
 @media (max-width: 712px) {
-    .infoImg {
-        max-width: 360px;
-        img {
-            max-width: 176px;
-        }
-    }
-    h1 {
-        font-size: 20px;
-    }
     .imgWrapper {
         h4 {
             font-size: 14px;
@@ -172,26 +151,26 @@ h3 {
     }
 }
 @media (max-width: 656px) {
-    .infoImg {
-        max-width: 344px;
-        img {
-            max-width: 144px;
-        }
-    }
+    // .infoImg {
+    //     max-width: 344px;
+    //     img {
+    //         max-width: 144px;
+    //     }
+    // }
 }
 @media (max-width: 480px) {
     h1 {
         font-size: 18px;
     }
 }
-.infoImg {
-    // flex-direction: column;
-    max-width: 480px;
-    gap: 24px;
-    img {
-        max-width: 320px;
-    }
-}
+// .infoImg {
+//     flex-direction: column;
+//     max-width: 480px;
+//     gap: 24px;
+//     img {
+//         max-width: 320px;
+//     }
+// }
 .imgWrapper {
     h4 {
         font-size: 18px;

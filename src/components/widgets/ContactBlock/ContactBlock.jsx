@@ -22,7 +22,7 @@ const ContactBlock = () => {
                         </p>
                     </div>
                     <div className={styles.contactFormButtonsAndSocial}>
-                        <a href="#" className={styles.btnForm}>
+                        <a href="/" className={styles.btnForm}>
                             РЕКВИЗИТЫ
                         </a>
 

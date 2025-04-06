@@ -23,16 +23,13 @@ const InfotableBlock = () => {
                     </div>
                     <div className={styles.imgWrapper}>
                         <img src={infoImg3} alt="infoImg3"></img>
-                        <h4>
-                            Реализация товаров и переработанных отходов швейной
-                            отрасли
-                        </h4>
+                        <h4>Реализация переработанных товаров</h4>
                     </div>
                 </div>
-                {/* <p className={styles.infoText}>
+                <p className={styles.infoText}>
                     "ECOTEXTILEPLUS" перерабатывает широкий спектр тканей в
                     товары бытового и хозяйственного назначения.
-                </p> */}
+                </p>
                 <div className={styles.industrywrapper}>
                     {/* <div className={styles.industry}>
                         <h3> ЧТО ПЕРЕРАБАТЫВАЕМ</h3>
