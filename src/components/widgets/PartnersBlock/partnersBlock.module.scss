@@ -1,5 +1,9 @@
 .wrapperPartnersSlider {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .partnersTitle {
     text-align: center;
@@ -7,26 +11,24 @@
     font-weight: bold;
     font-style: normal;
     text-transform: uppercase;
-    margin: 0;
 }
 .slider {
+    padding: 0 0 24px 0;
     display: flex;
-    flex-direction: column;
+    // flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 24px;
     position: relative;
-    max-width: 784px;
+    max-width: 560px;
     max-height: 300px;
-    margin: 40px auto 40px;
     z-index: 0;
 }
 .slide {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 320px;
+    max-width: 75%;
 }
 .leftArrow {
     background: none;
@@ -70,12 +72,10 @@
 @media (max-width: 880px) {
     .slide {
         width: 64%;
-        height: 48%;
     }
 }
 @media (max-width: 768px) {
     .slide {
         width: 48%;
-        height: 32%;
     }
 }
