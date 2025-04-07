@@ -4,13 +4,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 16px;
 }
 .teamMemberPageWrapper {
-    width: 1440px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    background-color: yellow;
+    gap: 24px;
+    padding: 24px 32px;
+}
+.memberTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    img {
+        width: 32%;
+    }
+    .memberName {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.memberData {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    .memberDataTitle {
+        font-size: 20px;
+        text-align: start;
+        padding-left: 24px;
+    }
+    .memberDataDescription {
+        font-size: 20px;
+        text-align: start;
+        padding: 24px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 1136px) {
+    .teamMemberPage {
+        margin: 80px auto 0;
+    }
 }
