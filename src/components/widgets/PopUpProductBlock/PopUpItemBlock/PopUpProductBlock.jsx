@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import styles from "./popUpItemBlock.module.scss";
 import popUpProductData from "../PopUpProductData.js";
 import popUpGoodsData from "../PopUpGoodsData.js";
-import imgEco from "../../../../assets/popUpProduct/eco_1.png";
+import imgEco from "../../../../assets/gallery/recycling_clothes.png";
 
 const PopUpProductBlock = () => {
     const { id, type } = useParams();
