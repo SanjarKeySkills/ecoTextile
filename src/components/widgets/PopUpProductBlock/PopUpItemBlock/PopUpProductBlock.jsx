@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./popUpItemBlock.module.scss";
 import popUpProductData from "../PopUpProductData.js";
@@ -6,6 +6,10 @@ import popUpGoodsData from "../PopUpGoodsData.js";
 import imgEco from "../../../../assets/gallery/recycling_clothes.png";
 
 const PopUpProductBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const { id, type } = useParams();
 
     const mapData = {
