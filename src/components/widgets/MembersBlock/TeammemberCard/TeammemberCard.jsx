@@ -8,14 +8,19 @@ const TeammemberCard = () => {
         <div className={styles.teammemberCards}>
             <div className={styles.memberCardsWrapper}>
                 <div className={styles.membersItemContainer}>
-                    <h4>КОМАНДА ПРОЕКТА</h4>
+                    <h2>КОМАНДА ПРОЕКТА</h2>
                     <p>
                         Для успешной реализации проетка была создана команда из
                         профессионалов с глубокими компетенциями в области
                         переработки отходов швейной отрасли, защиты окружающей
                         среды, менеджмента, ESG и IT.
                     </p>
-                    <TeammembersGenerator data={TeammembersData} type="type" />
+                    <div className={styles.teammembersGeneratorWrapper}>
+                        <TeammembersGenerator
+                            data={TeammembersData}
+                            type="type"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

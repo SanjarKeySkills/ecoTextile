@@ -1,15 +1,4 @@
-.cardPage {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-// .cardWrapper {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-.card {
+.cardList {
     max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -18,7 +7,7 @@
     grid-row-gap: 16px;
 }
 .cardContainer {
-    padding: 24px;
+    padding: 24px 32px;
     display: flex;
     flex-direction: row;
     background-image: url(../../../../assets/gallery/green_cuty_bg.svg);
@@ -29,9 +18,11 @@
     .memberName {
         font-size: 20px;
         color: #013a3c;
+        padding: 0;
     }
     .annotationName {
         font-size: 18px;
+        padding: 0;
     }
     img {
         border-radius: 50%;
@@ -42,7 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 .linkMember {
