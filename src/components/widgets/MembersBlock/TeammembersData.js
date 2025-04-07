@@ -37,7 +37,7 @@ const membersData = [
         sertif: "Экология и Айти",
     },
     {
-        id: "3",
+        id: "4",
         name: "Сотрудник № 4",
         annotation: "Более 5 лет опыта в швейке.",
         // image: getMemberPathById(3),
