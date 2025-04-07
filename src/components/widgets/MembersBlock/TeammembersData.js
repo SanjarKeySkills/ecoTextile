@@ -36,6 +36,17 @@ const membersData = [
             "Программирование; \n Веб дизайн; \n Стратегическое планирование.",
         sertif: "Экология и Айти",
     },
+    {
+        id: "3",
+        name: "Сотрудник № 4",
+        annotation: "Более 5 лет опыта в швейке.",
+        // image: getMemberPathById(3),
+        image: require("../../../assets/gallery/sanjar_amanov.png"),
+        jobExp: "Более 5 лет опыта в сфере швейки.",
+        edu: "КРСУ им Е. Б. Н.",
+        competence: "Швейка.",
+        sertif: "Швейка",
+    },
 ];
 
 export default membersData;
