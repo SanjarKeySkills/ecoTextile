@@ -1,31 +1,48 @@
-.cardList {
+.cardPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// .cardWrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+.card {
     max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    background-color: rgb(228, 40, 40);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
 }
-
 .cardContainer {
-    padding: 24px 32px;
+    padding: 24px;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    // background-image: url(../../../assets/cardbackground.svg);
+    background-image: url(../../../../assets/gallery/green_cuty_bg.svg);
     background-size: cover;
     background-position: bottom center;
     gap: 8px;
     border-radius: 8px;
-    background-color: #fff;
+    .memberName {
+        font-size: 20px;
+        color: #013a3c;
+    }
+    .annotationName {
+        font-size: 18px;
+    }
+    img {
+        border-radius: 50%;
+    }
 }
-
 .cardText {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 24px;
+    align-items: center;
+    gap: 16px;
 }
 
 .linkMember {

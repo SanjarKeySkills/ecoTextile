@@ -9,27 +9,31 @@ export default function TeammembersGenerator({ data, type }) {
         <div className={styles.cardList}>
             {/* // <div className={clsx(styles.cardList, styles.img, { [styles.active]: true })}> */}
             {data.map((member) => (
-                <div key={member.id} className={styles.cardContainer}>
-                    <div className={styles.cardText}>
-                        <h2 className={styles.memberName}>{member.name}</h2>
-                        <p className={styles.annotationName}>
-                            {member.annotation}
-                        </p>
-                        <Link
-                            to={`/member/${type}/${member.id}`}
-                            className={styles.linkMember}>
-                            РЕЗЮМЕ
-                        </Link>
-                        {/* при клике перекидвает сначала на member потом на type 
-						потом по id и после этого вся информция записывается в URL
-						и после этого начинается подгружаться компонент memberPage
-						*/}
+                <div key={member.id} className={styles.cardPage}>
+                    {/* <div className={styles.cardWrapper}> */}
+                    <div className={styles.card}>
+                        <div className={styles.cardContainer}>
+                            <div className={styles.cardText}>
+                                <h2 className={styles.memberName}>
+                                    {member.name}
+                                </h2>
+                                <p className={styles.annotationName}>
+                                    {member.annotation}
+                                </p>
+                                <Link
+                                    to={`/member/${type}/${member.id}`}
+                                    className={styles.linkMember}>
+                                    РЕЗЮМЕ
+                                </Link>
+                            </div>
+                            <img
+                                className={styles.memberImg}
+                                src={member.image}
+                                alt={member.name}
+                            />
+                        </div>
                     </div>
-                    <img
-                        className={styles.memberImg}
-                        src={member.image}
-                        alt={member.name}
-                    />
+                    {/* </div> */}
                 </div>
             ))}
         </div>
