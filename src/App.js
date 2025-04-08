@@ -9,7 +9,8 @@ import { OurteamPage } from "./pages/OurteamPage/OurteamBlock.async";
 import { ItemPage } from "./pages/ItemPage/ItemPage.async";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
 import { VacancyPage } from "./pages/VacancyPage/VacancyPage.async.jsx";
-// import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
+import { AccountPage } from "./pages/AccountPage/AccountPageAsync.jsx";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 import "./App.css";
 
 function App() {
@@ -84,15 +85,23 @@ function App() {
                                 </Suspense>
                             }
                         />
+                        <Route
+                            path="/account"
+                            element={
+                                <Suspense fallback={<ContentFallback />}>
+                                    <AccountPage />
+                                </Suspense>
+                            }
+                        />
                     </Route>
-                    {/* <Route
+                    <Route
                         path="*"
                         element={
                             <Suspense fallback={<ContentFallback />}>
                                 <ErrorPage />
                             </Suspense>
                         }
-                    /> */}
+                    />
                 </Routes>
             </Router>
         </div>

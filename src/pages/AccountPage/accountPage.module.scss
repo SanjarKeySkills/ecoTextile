@@ -1,0 +1,47 @@
+.accountPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.accountPageInfo {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 16px;
+    }
+}
+
+.bankingAccount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+// Table
+.table-container {
+    width: 480px;
+    margin: 24px auto;
+    border: 1px solid #013a3c;
+    padding: 16px;
+}
+.table {
+    display: table;
+    width: 100%;
+    padding-bottom: 24px;
+}
+.tableRow {
+    display: table-row;
+}
+.tableCell {
+    display: table-cell;
+    padding: 24px;
+    border: 1px solid #013a3c;
+    text-align: center;
+}
