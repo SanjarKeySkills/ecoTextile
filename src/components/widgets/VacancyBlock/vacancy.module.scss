@@ -48,6 +48,11 @@
         flex-direction: column;
     }
     .vacancyInfo {
-        width: 40%;
+        width: 320px;
+    }
+}
+@media (max-width: 424px) {
+    .vacancyInfo {
+        width: 200px;
     }
 }
