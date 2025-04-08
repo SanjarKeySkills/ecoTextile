@@ -7,7 +7,7 @@ import { ContactPage } from "./pages/ContactPage/ContactPage.async";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async";
 import { OurteamPage } from "./pages/OurteamPage/OurteamBlock.async";
 import { ItemPage } from "./pages/ItemPage/ItemPage.async";
-// import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
+import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
 // import { VacancyPage } from "./pages/VacancyPage/VacancyPage.async.jsx";
 // import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 import "./App.css";
@@ -68,14 +68,14 @@ function App() {
                                 </Suspense>
                             }
                         />
-                        {/* <Route
+                        <Route
                             path="/gallery"
                             element={
                                 <Suspense fallback={<ContentFallback />}>
                                     <GalleryPage />
                                 </Suspense>
                             }
-                        /> */}
+                        />
                         {/* <Route
                             path="/vacancy"
                             element={
