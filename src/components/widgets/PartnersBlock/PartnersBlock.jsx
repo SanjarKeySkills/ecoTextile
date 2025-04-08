@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./partnersBlock.module.scss";
 import partnersLogo1 from "../../../assets/partners/cooldbros.png";
 import partnersLogo2 from "../../../assets/partners/globalGarment.png";
@@ -6,6 +6,10 @@ import partnersLogo2 from "../../../assets/partners/globalGarment.png";
 const images = [partnersLogo1, partnersLogo2];
 
 const PartnersBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);

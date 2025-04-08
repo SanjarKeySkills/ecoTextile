@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./accountPage.module.scss";
 import certificate from "../../assets/certificate.png";
 
 const AccountPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.accountPage}>
             <div className={styles.accountPageInfo}>

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./missionBlock.module.scss";
 
 const MissionBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.missionBlock}>
             <div className={styles.missionContainer}>

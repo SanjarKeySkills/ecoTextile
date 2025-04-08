@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./vacancy.module.scss";
 
 export default function VacancyBlock({ data }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.vacancy}>
             {data.map((vacancy) => (

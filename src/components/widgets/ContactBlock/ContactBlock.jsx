@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./contactBlock.module.scss";
 import instLogo from "../../../assets/social/instagram-logo_contact.svg";
 import facebookLogo from "../../../assets/social/facebook-logo_contact.svg";
 import Button from "../../ui/Button/Button";
 
 const ContactBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.contact}>
             <div className={styles.contactWrapper}>

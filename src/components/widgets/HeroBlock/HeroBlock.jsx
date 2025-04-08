@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./heroBlock.module.scss";
 import imageTop from "../../../assets/gallery/heroTop.png";
 
 const HeroBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.heroBlock}>
             <div className={styles.heroWrapper}>

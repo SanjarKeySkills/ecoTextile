@@ -3,6 +3,9 @@ import styles from "./mediaBlock.module.scss";
 import videoBg from "../../../assets/videoplayback.mp4";
 
 const MediaBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const videoRef = useRef(null);
     useEffect(() => {
         videoRef.current.play();

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./infotableBlock.module.scss";
 import infoImg1 from "../../../assets/gallery/cloth_recycling_2.png";
 import infoImg2 from "../../../assets/gallery/recycle_pad.png";
@@ -8,6 +8,9 @@ import PopUpProductCard from "../PopUpProductBlock/popUpProductCard/PopUpProduct
 import PopUpGoodsCard from "../PopUpProductBlock/PopUpGoodsCard/PopUpGoodsCard";
 
 const InfotableBlock = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.infoTableBlock}>
             <div className={styles.infoList}>
