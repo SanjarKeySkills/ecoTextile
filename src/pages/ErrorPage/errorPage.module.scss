@@ -4,3 +4,16 @@
     justify-content: center;
     align-items: center;
 }
+
+// responcive
+
+@media (max-width: 1136px) {
+    .errorImg {
+        width: 480px;
+    }
+}
+@media (max-width: 640px) {
+    .errorImg {
+        width: 296px;
+    }
+}
