@@ -39,7 +39,7 @@ const membersData = [
     },
     {
         id: "4",
-        name: "Сотрудник № 4",
+        name: "Наруто мырза",
         annotation: "Более 5 лет опыта в швейке.",
         // image: getMemberPathById(3),
         image: require("../../../assets/team/sanjar_amanov.png"),
@@ -50,7 +50,7 @@ const membersData = [
     },
     {
         id: "5",
-        name: "Сотрудник № 5",
+        name: "Тоторо байке",
         annotation: "Более 5 лет опыта в швейке.",
         // image: getMemberPathById(3),
         image: require("../../../assets/team/totoro.png"),
@@ -61,7 +61,7 @@ const membersData = [
     },
     {
         id: "6",
-        name: "Сотрудник № 6",
+        name: "Сайтама мырза",
         annotation: "Более 5 лет опыта в швейке.",
         // image: getMemberPathById(3),
         image: require("../../../assets/team/saitama.png"),
