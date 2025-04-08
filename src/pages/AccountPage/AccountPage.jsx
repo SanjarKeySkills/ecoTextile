@@ -28,34 +28,48 @@ const AccountPage = () => {
                     <div className={styles.table}>
                         <div className={styles.tableRow}>
                             <div className={styles.tableCell}>
-                                Расчетный счет СОМ
+                                <p>Расчетный счет СОМ</p>
                             </div>
-                            <div className={styles.tableCell}>KGS</div>
+                            <div className={styles.tableCell}>
+                                <p>KGS</p>
+                            </div>
                         </div>
                         <div className={styles.tableRow}>
-                            <div className={styles.tableCell}>Банк</div>
                             <div className={styles.tableCell}>
-                                Филиал ОАО “Оптима Банк” в г.Бишкек №5
+                                <p>Банк</p>
+                            </div>
+                            <div className={styles.tableCell}>
+                                <p>Филиал ОАО “Оптима Банк” в г.Бишкек №5</p>
                             </div>
                         </div>
-                        <div className={styles.tableCell}>Адрес Банка</div>
                         <div className={styles.tableCell}>
-                            город Бишкек,Байтик Баатыра,д 20-20а
+                            <p>Адрес Банка</p>
                         </div>
-                        <div className={styles.tableRow}>
-                            <div className={styles.tableCell}>БИК</div>
-                            <div className={styles.tableCell}>109016</div>
+                        <div className={styles.tableCell}>
+                            <p> город Бишкек,Байтик Баатыра,д 20-20а</p>
                         </div>
                         <div className={styles.tableRow}>
                             <div className={styles.tableCell}>
-                                Расчетный счет
+                                <p>БИК</p>
                             </div>
                             <div className={styles.tableCell}>
-                                1091612054670170
+                                <p>109016</p>
+                            </div>
+                        </div>
+                        <div className={styles.tableRow}>
+                            <div className={styles.tableCell}>
+                                <p> Расчетный счет</p>
+                            </div>
+                            <div className={styles.tableCell}>
+                                <p>1091612054670170</p>
                             </div>
                         </div>
                     </div>
-                    <img src={certificate} alt="certificate" />
+                    <img
+                        src={certificate}
+                        alt="certificate"
+                        className={styles.imgAccount}
+                    />
                 </div>
             </div>
         </div>
