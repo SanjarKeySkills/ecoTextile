@@ -6,4 +6,19 @@
     padding-bottom: 24px;
     flex-direction: column;
     gap: 16px;
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+// Responcive
+@media (max-width: 1136px) {
+    .vacancyPage {
+        margin: 88px auto 0;
+        gap: 8px;
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
 }
